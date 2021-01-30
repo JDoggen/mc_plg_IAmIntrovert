@@ -1,0 +1,17 @@
+messages:
+  prefix:
+    info: "§7[§aIAmIntrovert§7] §e"
+    warning: "§7[§aIAmIntrovert§7] §c"
+  warning:
+    unauthorized: "You're not authorized to execute that command"
+    no_command_line: "You can't run that command from the commandline"
+    reload_error: "Something went wrong during reloading. Please see logging for details!"
+    only_on_or_off: "Expected value On or Off"
+    edge_only_cuboid_regions: "Edge only (-e) can only be used with cuboid regions"
+  info:
+    reload_success: "Reload succesfull!"
+    toggle_on: "Players now invisible"
+    toggle_off: "Players now visible"
+  help:
+    - /iai <on|off> - Toggle user visibility
+

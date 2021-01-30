@@ -1,0 +1,50 @@
+name: IAmIntrovertPlugin
+version: 1.0.0
+main: com.backslide999.iamintrovert.IAmIntrovertPlugin
+api-version: 1.13
+author: Backslide999
+description: Give players the ability to
+
+softdepend: [PlaceholderAPI]
+
+commands:
+
+  iai:
+    description: Main plugin command
+    aliases: [iamintrovert]
+    permission-message: §cYou do not have permission to use that command!
+    usage: §9/iai help
+
+permissions:
+
+  iai.*:
+    description: Allows all IAmIntrovert commands
+    default: op
+    children:
+      iai.toggle.*: true
+      iai.help: true
+
+  iai.toggle.*:
+    description: Allows IAmIntrovert enabling in every map
+    default: op
+    children:
+      iai.toggle.world: true
+      iai.toggle.world_nether: true
+      iai.toggle.world_the_end: true
+
+  iai.toggle.world:
+    description: Allows IAmIntrovert enabling in the map world
+    default: op
+
+  iai.toggle.world_nether:
+    description: Allows IAmIntrovert enabling in the map world_nether
+    default: op
+
+  iai.toggle.world_the_end:
+    description: Allows IAmIntrovert enabling in the map world_the_end
+    default: op
+
+  iai.help:
+    description:  Allows displaying the help command
+    default: op
+
